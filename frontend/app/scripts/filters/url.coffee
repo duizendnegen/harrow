@@ -124,7 +124,7 @@ angular.module('harrowApp').filter 'url', ($filter) ->
         when 'bitbucketDeployKeys'
           return "https://#{output.toString('humanBitbucketDeployKeys')}/"
         when 'humanBitbucketDeployKeys'
-          return "bitbucket.org/#{pathname}/admin/deploy-keys"
+          return "bitbucket.org/#{pathname}/admin/access-keys"
         when 'dir'
           paths = pathname.split('/')
           name = paths[paths.length - 1]
